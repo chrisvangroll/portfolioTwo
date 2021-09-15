@@ -15,3 +15,7 @@ section{
     padding: 5em 2em;
 }
 
+:focus{
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}

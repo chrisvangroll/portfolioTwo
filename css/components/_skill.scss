@@ -1,0 +1,38 @@
+.skills{
+    h2{
+        text-align: center;
+    }
+
+    h2::after{
+        content: '';
+        display: block;
+        width: 2em;
+        height: 1px;
+        margin: .5em auto 1em;
+        background: var(--clr-accent);
+        opacity: .25;
+    }
+    .skills_body{
+        display: flex;
+        flex-flow: row wrap;
+        width: 75%;
+        margin: auto;
+        justify-content: center;
+
+        .table{
+            width: 47%;
+            margin-right: 3%;
+
+            .skills_item{
+                text-align: center;
+                border-bottom: solid var(--clr-dark);
+                box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
+                font-size: var(--fs-h3);
+                
+                .fab, .fas{
+                    color: var(--clr-accent);
+                }
+            }
+        }
+    }
+}

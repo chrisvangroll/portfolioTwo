@@ -134,6 +134,11 @@ section {
   padding: 5em 2em;
 }
 
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
 footer {
   background: #111;
   color: var(--clr-accent);
@@ -311,5 +316,119 @@ strong {
   padding: 0.25em 1em;
   font-family: var(--ff-secondaryl);
   margin-bottom: 1em;
+}
+
+.about_me {
+  background-color: var(--clr-dark);
+  background-image: url(../images/pexels-pixabay-41949.webp);
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  background-size: cover;
+  color: var(--clr-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about_me .section_title--about {
+  color: var(--clr-accent);
+  position: relative;
+}
+.about_me .section_title--about::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+.about_me .about_me--body {
+  margin: auto;
+  text-align: center;
+  width: 75%;
+  margin-bottom: 3em;
+}
+.about_me .btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: var(--clr-accent);
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+.about_me .btn:hover {
+  transform: scale(1.1);
+}
+
+.skills h2 {
+  text-align: center;
+}
+.skills h2::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-accent);
+  opacity: 0.25;
+}
+.skills .skills_body {
+  display: flex;
+  flex-flow: row wrap;
+  width: 75%;
+  margin: auto;
+  justify-content: center;
+}
+.skills .skills_body .table {
+  width: 47%;
+  margin-right: 3%;
+}
+.skills .skills_body .table .skills_item {
+  text-align: center;
+  border-bottom: solid var(--clr-dark);
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  font-size: var(--fs-h3);
+}
+.skills .skills_body .table .skills_item .fab, .skills .skills_body .table .skills_item .fas {
+  color: var(--clr-accent);
+}
+
+.myProjects {
+  background-color: var(--clr-dark);
+  background-image: url(../images/pexels-pixabay-41949.webp);
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  background-size: cover;
+  color: var(--clr-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.myProjects .section_subtitle_portfolio {
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
+}
+.myProjects .portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: center;
+}
+.myProjects .portfolio .portfolio_container {
+  width: 30%;
+  background-color: white;
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+.myProjects .portfolio .portfolio_container .project-logo {
+  width: 250px;
+}
+.myProjects .portfolio .portfolio_container .flame {
+  height: 150px;
 }
 /*# sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */
