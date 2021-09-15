@@ -1,6 +1,9 @@
 .intro{
     position: relative;
-
+    
+    .section__subtitle--intro{
+        display: inline-block;
+    }
     .intro_img{
         box-shadow: var(--bs);
     }
@@ -21,6 +24,8 @@
         grid-area: img;
         min-width: 250px;
         width: 300px;
+        position: relative;
+        z-index: 2;
     };
 
     .section__subtitle--intro{

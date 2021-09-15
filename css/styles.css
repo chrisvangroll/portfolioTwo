@@ -226,6 +226,9 @@ footer a {
 .intro {
   position: relative;
 }
+.intro .section__subtitle--intro {
+  display: inline-block;
+}
 .intro .intro_img {
   box-shadow: var(--bs);
 }
@@ -246,6 +249,8 @@ footer a {
     grid-area: img;
     min-width: 250px;
     width: 300px;
+    position: relative;
+    z-index: 2;
   }
 
   .section__subtitle--intro {
