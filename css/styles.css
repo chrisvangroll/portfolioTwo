@@ -421,14 +421,32 @@ strong {
 }
 .myProjects .portfolio .portfolio_container {
   width: 30%;
+  height: 220px;
   background-color: white;
   text-decoration: none;
   color: var(--clr-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 .myProjects .portfolio .portfolio_container .project-logo {
   width: 250px;
 }
+.myProjects .portfolio .portfolio_container .hot_takes {
+  display: flex;
+  flex-direction: row;
+}
 .myProjects .portfolio .portfolio_container .flame {
-  height: 150px;
+  height: 70px;
+  width: 50px;
+}
+.myProjects .portfolio .portfolio_container .reservia {
+  height: 75px;
+  width: 200px;
+  margin: auto;
+}
+.myProjects .portfolio .portfolio_container .project-description--sauce {
+  padding: 23px;
 }
 /*# sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */

@@ -23,16 +23,37 @@
 
         .portfolio_container{
             width: 30%;
+            height: 220px;
             background-color: white;
             text-decoration: none;
             color: var(--clr-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
 
             .project-logo{
                 width: 250px;
             }
+
+            .hot_takes{
+                display: flex;
+                flex-direction: row;
+            }
             
             .flame{
-                height: 150px;
+                height: 70px;
+                width: 50px;
+            }
+
+            .reservia{
+                height: 75px;
+                width: 200px;
+                margin: auto;
+            }
+
+            .project-description--sauce{
+                padding: 23px;
             }
         }
     }
