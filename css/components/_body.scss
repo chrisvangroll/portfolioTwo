@@ -7,6 +7,29 @@ body{
     line-height: 1.6;
 }
 
+.nav-open{
+    .nav-toggle{
+        position: fixed;
+
+        .fas{
+            display: none;
+        }
+
+        .ex{
+            display: inline-block;
+        }
+    }
+
+    .nav{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
 img{
     display: block;
 }
