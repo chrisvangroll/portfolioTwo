@@ -29,6 +29,10 @@
         text-align: center;
         width: 75%;
         margin-bottom: 3em;
+
+        .about_me--text{
+            margin-top: 0px;
+        }
     }
     .btn{
         display: inline-block;
@@ -36,7 +40,6 @@
         background: var(--clr-accent);
         text-decoration: none;
         cursor: pointer;
-        //font-size: .8em;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: var(--fw-bold);
