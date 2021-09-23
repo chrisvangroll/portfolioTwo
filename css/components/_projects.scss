@@ -36,6 +36,12 @@
             font-size: 25px;
             position: relative;
             margin: 8px;
+            @media(max-width: 1300px){
+                width: 47%;
+            }
+            @media(max-width: 850px){
+                width: 95%;
+            }
 
             &:hover{
 
@@ -141,6 +147,7 @@
             letter-spacing: 2px;
             font-weight: var(--fw-bold);
             transition: transform 200ms ease-in-out;
+            border: none;
     
             &:hover{
                 transform: scale(1.1);

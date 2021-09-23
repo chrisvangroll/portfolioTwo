@@ -32,6 +32,8 @@
 
         .about_me--text{
             margin-top: 0px;
+            width: 65%;
+            margin: auto;
         }
     }
     .btn{
@@ -44,6 +46,7 @@
         letter-spacing: 2px;
         font-weight: var(--fw-bold);
         transition: transform 200ms ease-in-out;
+        border: none;
 
         &:hover{
             transform: scale(1.1);

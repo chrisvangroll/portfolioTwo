@@ -284,6 +284,7 @@ footer a {
 }
 .intro .intro_img {
   box-shadow: var(--bs);
+  max-width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -399,6 +400,8 @@ strong {
 }
 .about_me .about_me--body .about_me--text {
   margin-top: 0px;
+  width: 65%;
+  margin: auto;
 }
 .about_me .btn {
   display: inline-block;
@@ -410,6 +413,7 @@ strong {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  border: none;
 }
 .about_me .btn:hover {
   transform: scale(1.1);
@@ -433,6 +437,7 @@ strong {
   width: 75%;
   margin: auto;
   justify-content: center;
+  max-width: 650px;
 }
 .skills .skills_body .table {
   width: 47%;
@@ -443,6 +448,7 @@ strong {
   border-bottom: solid var(--clr-dark);
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   font-size: var(--fs-h3);
+  padding: 5px 0px;
 }
 .skills .skills_body .table .skills_item .fab, .skills .skills_body .table .skills_item .fas {
   color: var(--clr-accent);
@@ -485,6 +491,16 @@ strong {
   font-size: 25px;
   position: relative;
   margin: 8px;
+}
+@media (max-width: 1300px) {
+  .myProjects .portfolio .portfolio_container {
+    width: 47%;
+  }
+}
+@media (max-width: 850px) {
+  .myProjects .portfolio .portfolio_container {
+    width: 95%;
+  }
 }
 .myProjects .portfolio .portfolio_container:hover .portfolio_item {
   -webkit-animation-name: fadeIn;
@@ -566,6 +582,7 @@ strong {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  border: none;
 }
 .myProjects .cvContainer .btn:hover {
   transform: scale(1.1);
