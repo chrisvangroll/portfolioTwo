@@ -11,3 +11,16 @@ navLinks.forEach(link =>{
         document.body.classList.remove('nav-open');
     }) 
 });
+
+const observer = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add('skillsAnimation');
+      }
+    });
+  });
+  
+  observer.observe(document.querySelector('skills_item'));

@@ -119,6 +119,28 @@ footer a {
     opacity: 0;
   }
 }
+@-webkit-keyframes skillsAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes skillsAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 *,
 *::before,
 *::after {
@@ -403,6 +425,11 @@ strong {
   width: 65%;
   margin: auto;
 }
+@media (max-width: 700px) {
+  .about_me .about_me--body .about_me--text {
+    width: 100%;
+  }
+}
 .about_me .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
@@ -443,12 +470,19 @@ strong {
   width: 47%;
   margin-right: 3%;
 }
+@media (prefers-reduced-motion: no-preference) {
+  .skills .skills_body .table .skillsAnimation {
+    -webkit-animation: skillsAnimation 1s 1;
+            animation: skillsAnimation 1s 1;
+  }
+}
 .skills .skills_body .table .skills_item {
   text-align: center;
   border-bottom: solid var(--clr-dark);
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   font-size: var(--fs-h3);
   padding: 5px 0px;
+  opacity: 0;
 }
 .skills .skills_body .table .skills_item .fab, .skills .skills_body .table .skills_item .fas {
   color: var(--clr-accent);

@@ -20,9 +20,16 @@
         justify-content: center;
         max-width: 650px;
 
+    
         .table{
             width: 47%;
             margin-right: 3%;
+
+            @media (prefers-reduced-motion: no-preference) {
+                .skillsAnimation{
+                  animation: skillsAnimation 1s 1;
+                }
+              }
 
             .skills_item{
                 text-align: center;
@@ -30,6 +37,7 @@
                 box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
                 font-size: var(--fs-h3);
                 padding: 5px 0px;
+                opacity: 0;
                 
                 .fab, .fas{
                     color: var(--clr-accent);
