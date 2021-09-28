@@ -466,6 +466,11 @@ strong {
   justify-content: center;
   max-width: 650px;
 }
+@media (max-width: 700px) {
+  .skills .skills_body {
+    width: 100%;
+  }
+}
 .skills .skills_body .table {
   width: 47%;
   margin-right: 3%;
@@ -500,6 +505,12 @@ strong {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 2em;
+}
+@media (max-width: 700px) {
+  .myProjects {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 .myProjects .section_subtitle_portfolio {
   font-weight: var(--fw-bold);
