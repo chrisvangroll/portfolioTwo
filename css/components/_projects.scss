@@ -28,6 +28,7 @@
         flex-flow: row wrap;
         margin: auto;
         justify-content: center;
+        cursor: pointer;
 
         .portfolio_container{
             width: 30%;
@@ -43,8 +44,12 @@
             margin: 8px;
             @media(max-width: 1300px){
                 width: 47%;
+
+                .projectBtn{
+                    font-size: 23px;
+                }
             }
-            @media(max-width: 850px){
+            @media(max-width: 700px){
                 width: 95%;
             }
 
@@ -83,6 +88,7 @@
                     //height: 30%;
                     display: flex;
                     justify-content: space-around;
+                    //text-decoration: none;
 
                     .projectBtn{
                         display: inline-block;
@@ -95,6 +101,8 @@
                         letter-spacing: 2px;
                         font-weight: var(--fw-bold);
                         transition: transform 200ms ease-in-out;
+                        text-decoration: none;
+                        color: var(--clr-dark);
                 
                         &:hover{
                             transform: scale(1.1);

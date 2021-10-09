@@ -523,6 +523,7 @@ strong {
   flex-flow: row wrap;
   margin: auto;
   justify-content: center;
+  cursor: pointer;
 }
 .myProjects .portfolio .portfolio_container {
   width: 30%;
@@ -541,8 +542,11 @@ strong {
   .myProjects .portfolio .portfolio_container {
     width: 47%;
   }
+  .myProjects .portfolio .portfolio_container .projectBtn {
+    font-size: 23px;
+  }
 }
-@media (max-width: 850px) {
+@media (max-width: 700px) {
   .myProjects .portfolio .portfolio_container {
     width: 95%;
   }
@@ -587,6 +591,8 @@ strong {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  text-decoration: none;
+  color: var(--clr-dark);
 }
 .myProjects .portfolio .portfolio_container .portfolio_item .btnContainer .projectBtn:hover {
   transform: scale(1.1);
