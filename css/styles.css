@@ -441,6 +441,7 @@ strong {
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
   border: none;
+  color: var(--clr-dark);
 }
 .about_me .btn:hover {
   transform: scale(1.1);

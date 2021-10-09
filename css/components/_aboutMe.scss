@@ -51,6 +51,7 @@
         font-weight: var(--fw-bold);
         transition: transform 200ms ease-in-out;
         border: none;
+        color: var(--clr-dark);
 
         &:hover{
             transform: scale(1.1);
