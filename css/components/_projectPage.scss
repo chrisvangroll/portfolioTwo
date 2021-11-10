@@ -1,7 +1,8 @@
-.myProjects{
+
+.pageContainer{
     background-color: var(--clr-dark);
-    background-image: url(../images/pexels-pixabay-41949.webp);
-    background-blend-mode: multiply;
+    height: 100vh;
+    background-color: var(--clr-dark);
     color: var(--clr-light);
     background-size: cover;
     color: var(--clr-light);
@@ -30,7 +31,7 @@
         justify-content: center;
         cursor: pointer;
 
-        .portfolio_container{
+        .prjContainer{
             width: 30%;
             height: 250px;
             background-color: white;
@@ -126,14 +127,46 @@
                 width: 250px;
             }
 
-            .hot_takes{
+            .hjrContainer{
                 display: flex;
                 flex-direction: row;
+
+                .devicon-react-original-wordmark{
+                    font-size: 70px;
+                }
+
+                .fa-tractor{
+                    font-size: 45px;
+                    margin-right: 8px;
+                    color: #5a8700;
+                }
+                .fa-divide{
+                    font-size: 45px;
+                    margin-right: 8px;
+                    color: #6d07b1;
+                }
+
+                .fa-search{
+                    font-size: 45px;
+                    margin-right: 8px;
+                    color: #940631;
+                }
+
+                .hjrTitleContainer{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .hjrTitle{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                }
             }
             
-            .flame{
-                height: 70px;
-                width: 50px;
+            .hjrLogo{
+                height: 110px;
+                width:135px;
             }
 
             .reservia{
@@ -174,3 +207,4 @@
     }
     
 }
+

@@ -621,6 +621,10 @@ strong {
 .myProjects .portfolio .portfolio_container .project-title--sauce {
   padding: 23px;
 }
+.myProjects .portfolio .portfolio_container .moreProjects {
+  font-weight: bold;
+  font-size: 30px;
+}
 .myProjects .cvContainer {
   margin-top: 2em;
 }
@@ -707,5 +711,182 @@ header .nav .nav_list .nav_link {
 }
 header .nav .nav_list .nav_link:hover {
   color: var(--clr-accent);
+}
+
+.pageContainer {
+  background-color: var(--clr-dark);
+  height: 100vh;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  background-size: cover;
+  color: var(--clr-light);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+@media (max-width: 700px) {
+  .pageContainer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.pageContainer .section_subtitle_portfolio {
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
+  margin: 1em;
+  font-size: 1.2em;
+}
+.pageContainer .portfolio {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: center;
+  cursor: pointer;
+}
+.pageContainer .portfolio .prjContainer {
+  width: 30%;
+  height: 250px;
+  background-color: white;
+  text-decoration: none;
+  color: var(--clr-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  position: relative;
+  margin: 8px;
+}
+@media (max-width: 1300px) {
+  .pageContainer .portfolio .prjContainer {
+    width: 47%;
+  }
+  .pageContainer .portfolio .prjContainer .projectBtn {
+    font-size: 23px;
+  }
+}
+@media (max-width: 700px) {
+  .pageContainer .portfolio .prjContainer {
+    width: 95%;
+  }
+}
+.pageContainer .portfolio .prjContainer:hover .portfolio_item {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.pageContainer .portfolio .prjContainer:hover .portfolio_item--description {
+  opacity: 0;
+}
+.pageContainer .portfolio .prjContainer .portfolio_item {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pageContainer .portfolio .prjContainer .portfolio_item .project-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.pageContainer .portfolio .prjContainer .portfolio_item .btnContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.pageContainer .portfolio .prjContainer .portfolio_item .btnContainer .projectBtn {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 0.5em 1.5em;
+  background: var(--clr-accent);
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+.pageContainer .portfolio .prjContainer .portfolio_item .btnContainer .projectBtn:hover {
+  transform: scale(1.1);
+}
+.pageContainer .portfolio .prjContainer .portfolio_item--description {
+  position: absolute;
+  opacity: 1;
+}
+.pageContainer .portfolio .prjContainer .project-logo {
+  width: 250px;
+}
+.pageContainer .portfolio .prjContainer .hjrContainer {
+  display: flex;
+  flex-direction: row;
+}
+.pageContainer .portfolio .prjContainer .hjrContainer .devicon-react-original-wordmark {
+  font-size: 70px;
+}
+.pageContainer .portfolio .prjContainer .hjrContainer .fa-tractor {
+  font-size: 45px;
+  margin-right: 8px;
+  color: #5a8700;
+}
+.pageContainer .portfolio .prjContainer .hjrContainer .fa-divide {
+  font-size: 45px;
+  margin-right: 8px;
+  color: #6d07b1;
+}
+.pageContainer .portfolio .prjContainer .hjrContainer .fa-search {
+  font-size: 45px;
+  margin-right: 8px;
+  color: #940631;
+}
+.pageContainer .portfolio .prjContainer .hjrContainer .hjrTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageContainer .portfolio .prjContainer .hjrContainer .hjrTitleContainer .hjrTitle {
+  display: flex;
+  flex-direction: row;
+}
+.pageContainer .portfolio .prjContainer .hjrLogo {
+  height: 110px;
+  width: 135px;
+}
+.pageContainer .portfolio .prjContainer .reservia {
+  height: 75px;
+  width: 200px;
+  margin: auto;
+}
+.pageContainer .portfolio .prjContainer .project-title--sauce {
+  padding: 23px;
+}
+.pageContainer .portfolio .prjContainer .moreProjects {
+  font-weight: bold;
+  font-size: 30px;
+}
+.pageContainer .cvContainer {
+  margin-top: 2em;
+}
+.pageContainer .cvContainer .btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: var(--clr-accent);
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+  border: none;
+}
+.pageContainer .cvContainer .btn:hover {
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */
