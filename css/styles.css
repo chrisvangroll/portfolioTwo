@@ -86,7 +86,7 @@ footer a {
 
 .socialList__link {
   padding: 0.5em;
-}
+} /*# sourceMappingURL=styles.css.map */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -294,7 +294,7 @@ footer a {
 
 .socialList__link {
   padding: 0.5em;
-}
+} /*# sourceMappingURL=styles.css.map */
 .intro {
   position: relative;
 }
@@ -320,7 +320,6 @@ footer a {
     grid-template-columns: -webkit-min-content -webkit-max-content;
     grid-template-columns: min-content max-content;
   }
-
   .intro_img {
     grid-area: img;
     min-width: 250px;
@@ -328,7 +327,6 @@ footer a {
     position: relative;
     z-index: 2;
   }
-
   .section__subtitle--intro {
     align-self: start;
     grid-column: -1/1;
@@ -490,8 +488,8 @@ strong {
   padding: 5px 0px;
   opacity: 0;
 }
-.skills .skills_body .table .skills_item .fab, .skills .skills_body .table .skills_item .fas {
-  color: var(--clr-accent);
+.skills .skills_body .table .skills_item i {
+  margin-right: 5px;
 }
 
 .myProjects {
@@ -604,6 +602,9 @@ strong {
 }
 .myProjects .portfolio .portfolio_container .project-logo {
   width: 250px;
+}
+.myProjects .portfolio .portfolio_container .project-logo img {
+  margin: auto;
 }
 .myProjects .portfolio .portfolio_container .hot_takes {
   display: flex;
@@ -888,5 +889,4 @@ header .nav .nav_list .nav_link:hover {
 }
 .pageContainer .cvContainer .btn:hover {
   transform: scale(1.1);
-}
-/*# sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
