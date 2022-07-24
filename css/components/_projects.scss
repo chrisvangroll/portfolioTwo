@@ -10,11 +10,42 @@
     flex-direction: column;
     justify-content: center;
     padding-bottom: 2em;
+    position: relative;
 
     @media(max-width: 700px){
         padding-right: 0;
         padding-left: 0;
     }
+
+    h2 {
+        position: relative;
+
+        .back-btn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+
+            @media(min-width: 800px) {
+                left: 50px;
+                top: 10px;
+            }
+    
+            svg {
+                margin-right: 8px;
+                width: 48px;
+                height: 48px;
+            }
+
+        }
+    }
+
+
 
     .section_subtitle_portfolio{
         font-weight: var(--fw-bold);
