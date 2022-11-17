@@ -73,6 +73,12 @@
             font-size: 25px;
             position: relative;
             margin: 8px;
+
+            @media(max-width: 768px) {
+                &:hover {
+                    height: 275px;
+                }
+            }
             @media(max-width: 1300px){
                 width: 47%;
 
