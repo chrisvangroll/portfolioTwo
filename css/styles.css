@@ -422,6 +422,7 @@ strong {
   margin-top: 0px;
   width: 65%;
   margin: auto;
+  font-size: 20px;
 }
 @media (max-width: 700px) {
   .about_me .about_me--body .about_me--text {
@@ -527,7 +528,7 @@ strong {
   flex-direction: row;
   align-items: center;
   position: absolute;
-  top: -5px;
+  top: -55px;
   left: 10px;
   text-decoration: none;
   color: white;
@@ -647,6 +648,10 @@ strong {
 .myProjects .portfolio .portfolio_container .hot_takes {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.myProjects .portfolio .portfolio_container .hot_takes .project-title--sauce {
+  padding-left: 8px;
 }
 .myProjects .portfolio .portfolio_container .flame {
   height: 70px;

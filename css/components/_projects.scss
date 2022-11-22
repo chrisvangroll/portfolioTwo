@@ -25,11 +25,12 @@
             flex-direction: row;
             align-items: center;
             position: absolute;
-            top: -5px;
+            top: -55px;
             left: 10px;
             text-decoration: none;
             color: white;
             font-weight: 400;
+
 
             @media(min-width: 800px) {
                 left: 50px;
@@ -170,6 +171,11 @@
             .hot_takes{
                 display: flex;
                 flex-direction: row;
+                align-items: center;
+
+                .project-title--sauce {
+                    padding-left: 8px;
+                }
             }
             
             .flame{
