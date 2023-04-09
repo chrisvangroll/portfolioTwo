@@ -86,15 +86,7 @@ footer a {
 
 .socialList__link {
   padding: 0.5em;
-} /*# sourceMappingURL=styles.css.map */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+} 
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -103,31 +95,12 @@ footer a {
     opacity: 1;
   }
 }
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 @keyframes fadeOut {
   from {
     opacity: 1;
   }
   to {
     opacity: 0;
-  }
-}
-@-webkit-keyframes skillsAnimation {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes skillsAnimation {
@@ -294,7 +267,7 @@ footer a {
 
 .socialList__link {
   padding: 0.5em;
-} /*# sourceMappingURL=styles.css.map */
+} 
 .intro {
   position: relative;
 }
@@ -312,12 +285,10 @@ footer a {
 @media (min-width: 600px) {
   .intro {
     display: grid;
-    width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
     margin: 0 auto;
     grid-template-areas: "img title" "img subtitle";
-    grid-template-columns: -webkit-min-content -webkit-max-content;
     grid-template-columns: min-content max-content;
   }
   .intro_img {
@@ -477,8 +448,7 @@ strong {
 }
 @media (prefers-reduced-motion: no-preference) {
   .skills .skills_body .table .skillsAnimation {
-    -webkit-animation: skillsAnimation 1s 1;
-            animation: skillsAnimation 1s 1;
+    animation: skillsAnimation 1s 1;
   }
 }
 .skills .skills_body .table .skills_item {
@@ -572,6 +542,16 @@ strong {
   margin: 8px;
 }
 @media (max-width: 768px) {
+  .myProjects .portfolio .portfolio_container .show {
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 768px) {
+  .myProjects .portfolio .portfolio_container .hide {
+    opacity: 0 !important;
+  }
+}
+@media (max-width: 768px) {
   .myProjects .portfolio .portfolio_container:hover {
     height: 275px;
   }
@@ -589,16 +569,15 @@ strong {
     width: 95%;
   }
 }
-.myProjects .portfolio .portfolio_container:hover .portfolio_item {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.myProjects .portfolio .portfolio_container:hover .portfolio_item--description {
-  opacity: 0;
+@media (min-width: 768px) {
+  .myProjects .portfolio .portfolio_container:hover .portfolio_item {
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+  }
+  .myProjects .portfolio .portfolio_container:hover .portfolio_item--description {
+    opacity: 0;
+  }
 }
 .myProjects .portfolio .portfolio_container .portfolio_item {
   width: 100%;
@@ -814,17 +793,6 @@ header .nav .nav_list .nav_link:hover {
   .pageContainer .portfolio .prjContainer {
     width: 95%;
   }
-}
-.pageContainer .portfolio .prjContainer:hover .portfolio_item {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.pageContainer .portfolio .prjContainer:hover .portfolio_item--description {
-  opacity: 0;
 }
 .pageContainer .portfolio .prjContainer .portfolio_item {
   width: 100%;
