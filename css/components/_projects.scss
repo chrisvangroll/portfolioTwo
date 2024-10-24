@@ -167,8 +167,15 @@
             .project-logo{
                 width: 250px;
 
+                .img-lg {
+                    margin: 0;
+                    width: 100%;
+                }
+
                 img {
                     margin: auto;
+                    width: 75%;
+                    height: auto; 
                 }
             }
 

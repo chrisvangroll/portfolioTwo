@@ -116,6 +116,13 @@
 
             .project-logo{
                 width: 250px;
+                display: flex;
+                justify-content: center;
+
+                .img-lg {
+                    margin: 0;
+                    width: 100%;
+                }
             }
 
             .hjrContainer{
